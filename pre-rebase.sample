@@ -1,9 +1,6 @@
 #!/bin/sh
 
-publish=next
-basebranch="$1"
-
-echo "It's dangerous to rebase alone. Here, take this:"
+echo "It's dangerous to rebase alone! Here, take this:"
 git branch _REBASE_BACKUP
 
 exit 0
