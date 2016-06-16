@@ -15,6 +15,7 @@
 # merged to 'next' branch from getting rebased, because allowing it
 # would result in rebasing already published history.
 
+<<<<<<< HEAD
 publish=next
 basebranch="$1"
 if test "$#" = 2
@@ -87,6 +88,10 @@ else
 	' "$topic" "$not_in_next" "$not_in_master"
 	exit 1
 fi
+=======
+echo "It's dangerous to rebase alone! Here, take this:"
+git branch _REBASE_BACKUP
+>>>>>>> 8d36448... sucessfully create _REBASE_BACKUP branch before rebase, but…
 
 exit 0
 
