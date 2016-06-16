@@ -1,5 +1,5 @@
 # Backup Git branches before rebasing
 
-[ ] reduce `pre-rebase.sample` to something useful for further testing
+[x] reduce `pre-rebase.sample` to something useful for further testing
 [ ] implement auto-branching with static name ("_REBASE_BACKUP")
 [ ] implement dynamic branch naming ("_RBBU_'YYMMDD-HH:MM")
