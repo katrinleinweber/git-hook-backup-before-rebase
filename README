@@ -2,5 +2,5 @@
 
 [x] reduce `pre-rebase.sample` to something useful for further testing
 [x] implement auto-branching with static name ("_REBASE_BACKUP")
-[ ] check for & delete existing _REBASE_BACKUP branch
+[x] check for & delete existing _REBASE_BACKUP branch
 [ ] implement dynamic backup naming ("BRANCH-backup-YYYY-MM-DD-HH-MM-SS"); How to intercept branch name from command & still execute it with modified name?
