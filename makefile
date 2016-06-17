@@ -1,5 +1,5 @@
 all:
-	cp pre-rebase.sample .git/hooks/pre-rebase
+	cp backup-before-rebase.sh .git/hooks/pre-rebase
 
 test: all
 	git stash
