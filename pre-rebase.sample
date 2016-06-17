@@ -90,7 +90,9 @@ else
 fi
 =======
 echo "It's dangerous to rebase alone! Here, take this:"
+set -x
 git branch _REBASE_BACKUP
+<<<<<<< HEAD
 >>>>>>> 8d36448... sucessfully create _REBASE_BACKUP branch before rebase, but…
 
 exit 0
@@ -172,3 +174,5 @@ To compute (2):
 	git rev-list master..topic
 
 	if this is empty, it is fully merged to "master".
+=======
+>>>>>>> 34e9d58... display & simplify hook echo
