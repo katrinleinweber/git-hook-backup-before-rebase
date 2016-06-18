@@ -1,7 +1,7 @@
-all:
+this:
 	cp backup-before-rebase.sh .git/hooks/pre-rebase
 
-local: all
+local: this
 	# distribute to all neighbouring repositories
 	# CAUTION: Overwrites existing hooks
 	# learned from http://askubuntu.com/a/300774
@@ -10,7 +10,7 @@ local: all
 	find ../*/.git/hooks -type d -exec cp pre-rebase {} \;
 	rm pre-rebase
 
-test: all
+test: this
 	git stash
 	git checkout _TEST
 	git rebase master
