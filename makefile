@@ -1,5 +1,6 @@
 this:
 	cp backup-before-rebase.sh .git/hooks/pre-rebase
+	chmod +x .git/hooks/pre-rebase
 
 local: this
 	# distribute to all neighbouring repositories
@@ -8,6 +9,7 @@ local: this
 	# and http://stackoverflow.com/a/15346489/4341322
 	cp backup-before-rebase.sh pre-rebase
 	find ../*/.git/hooks -type d -exec cp pre-rebase {} \;
+	find ../*/.git/hooks/pre-rebase -exec chmod +x {} \;
 	rm pre-rebase
 
 test: this
